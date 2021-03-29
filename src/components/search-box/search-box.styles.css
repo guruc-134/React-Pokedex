@@ -1,0 +1,12 @@
+.search {
+    -webkit-appearance: none;
+    background:rgba(255, 255, 255, 0.699);
+    border: none;
+    border-radius: 15px;
+    font-family: cursive;
+    outline: none;
+    padding: 10px;
+    width: 150px;
+    line-height: 30px;
+    margin: 30px auto;
+}
