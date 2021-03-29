@@ -1,6 +1,6 @@
 <hr>
 
-## check out the gh-pages branch for the project 
+### Note: check out the gh-pages branch for the project 
 <hr>
 
 
