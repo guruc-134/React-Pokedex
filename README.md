@@ -1,6 +1,7 @@
 <hr>
 
 ### Note: check out the gh-pages branch for the project 
+###### https://github.com/guruc-134/React-Pokedex/tree/gh-pages
 <hr>
 
 
