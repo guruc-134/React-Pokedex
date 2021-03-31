@@ -27,19 +27,33 @@ class App extends Component
         {
           const url=`https://pokeapi.co/api/v2/pokemon/${i}`;
           promises.push( fetch(url)
-            .then(res =>res.json() ) ); 
+          .then(res =>res.json() )
+          .catch(err => console.log(`the image at the id ${i} was not found`)) )
         }
         // all the promises are pushed into an array and once all of them are resolved then our details are collected
         var pokemon= []
         Promise.all(promises).then(results =>
         {
-              pokemon= results.map((data) => (
-              {
+          console.log(results)
+            pokemon=[]
+            for (let data of results)
+            {
+              if(data === undefined || data.types=== undefined) continue;
+              pokemon.push({
                 name:data.name,
                 id:data.id,
                 image:`https://pokeres.bastionbot.org/images/pokemon/${data.id}.png`,
                 type:data.types.map((type) => type.type.name).join(', ')
-              }));
+              }
+              )
+            }
+              // pokemon= results.map((data) => (
+              // {
+              //   name:data.name,
+              //   id:data.id,
+              //   image:`https://pokeres.bastionbot.org/images/pokemon/${data.id}.png`,
+              //   type:data.types.map((type) => type.type.name).join(', ')
+              // }));
             this.setState({ pokemons:pokemon})
           });      
     };
