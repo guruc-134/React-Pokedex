@@ -1,3 +1,11 @@
+<hr>
+
+### Note: check out the gh-pages branch for the project 
+###### https://github.com/guruc-134/React-Pokedex/tree/gh-pages
+<hr>
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
