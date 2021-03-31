@@ -1,7 +1,11 @@
 <hr>
-
-### Note: check out the gh-pages branch for the project 
-###### https://github.com/guruc-134/React-Pokedex/tree/gh-pages
+My first project in react
+learnt about reacts component architecture
+virtual dom
+ hosted application link :
+ https://guruc-134.github.io/React-Pokedex/
+ 
+ Project build using Creat Reach app
 <hr>
 
 
